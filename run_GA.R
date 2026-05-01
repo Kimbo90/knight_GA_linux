@@ -15,12 +15,14 @@ library(wateRmelon)
 
 # ---- DOWNLOAD beta matrix from OneDrive ----
 
+
 download.file(
-  "https://cf-my.sharepoint.com/my?id=%2Fpersonal%2Fjoneskm10%5Fcardiff%5Fac%5Fuk%2FDocuments%2FDocuments%2FGA%5Ftransfer%2Fbeta%5FW6%2Erds",
+  "https://cf-my.sharepoint.com/:u:/r/personal/joneskm10_cardiff_ac_uk/Documents/Documents/GA_transfer/beta_W6.rds?download=1",
   destfile = "beta_W6.rds",
   mode = "wb",
-  method = "auto"
+  method = "libcurl"
 )
+
 
 
 beta_W6 <- readRDS("beta_W6.rds")
