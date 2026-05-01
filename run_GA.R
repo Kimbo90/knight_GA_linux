@@ -14,11 +14,14 @@ BiocManager::install(c(
 library(wateRmelon)
 
 # ---- DOWNLOAD beta matrix from OneDrive ----
+
 download.file(
-  "PASTE_YOUR_ONEDRIVE_LINK_HERE",
+  "https://cf-my.sharepoint.com/my?id=%2Fpersonal%2Fjoneskm10%5Fcardiff%5Fac%5Fuk%2FDocuments%2FDocuments%2FGA%5Ftransfer%2Fbeta%5FW6%2Erds",
   destfile = "beta_W6.rds",
-  mode = "wb"
+  mode = "wb",
+  method = "auto"
 )
+
 
 beta_W6 <- readRDS("beta_W6.rds")
 
